@@ -1,0 +1,197 @@
+* {
+    background-color: aqua;
+    box-sizing: border-box;
+}
+body{
+    
+    padding: 0%;
+    margin: 0%;
+}
+.myhead {
+    text-align: center;
+    height: 40px;
+    width:auto;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 40px;
+    color: red;
+     border-bottom: 5px solid red;
+}
+
+.sidebar {
+    height: auto;
+    width: 180px;
+    font-size: 14px;
+    position: absolute;
+}
+
+.sidebar img {
+    height: 100px;
+    width: 100px;
+    border: 3px solid black;
+    border-radius: 100%;
+    margin-left:60px;
+    margin-top: 10px;
+}
+
+.sidebar img:hover {
+    border: 2px solid red;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    color: rebeccapurple;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: black;
+    background-color: aqua;
+}
+
+#main:hover {
+    background-color: aqua;
+    color: red;
+}
+
+#main {
+   font-size: 16px;
+    margin-left:310px;
+    margin-top: 1rem;
+    color: black;
+}
+
+#main a {
+    font-size:15px;
+    font-weight: bold;
+    color: black;
+}
+
+#main h5 {
+    font-size: 14px;
+    color: black;
+}
+
+#spanfix {
+    animation-name: blinker;
+    animation-duration: .70s;
+    animation-iteration-count: infinite;
+    color: red;
+    font-size: 14px;
+    margin-left: 1px;
+}
+
+@keyframes blinker {
+    from {
+        opacity: 1.0
+    }
+
+    to {
+        opacity: 0.0;
+    }
+
+}
+
+@media (max-width:480px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        overflow: hidden;
+        background-color: aqua;
+    }
+
+    .myhead {
+        width: 100%;
+        height: auto;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    .sidebar {
+        height: auto;
+        width: 120px;
+        font-size: 8px;
+
+    }
+
+    .sidebar img {
+        height: 60px;
+        width: 60px;
+        border: 3px solid black;
+        border-radius: 100%;
+        margin-left: 29px;
+    }
+
+    .sidebar img:hover {
+        border: 2px solid greenyellow;
+    }
+
+    .sidebar ul {
+        list-style: none;
+    }
+
+    .sidebar ul li {
+        color: rgb(82, 79, 79);
+        text-align: center;
+        padding: 2px;
+    }
+
+    .sidebar ul li a {
+        color: red;
+    }
+
+    .sidebar ul li a:hover {
+        color: black;
+        background-color: aqua;
+    }
+
+    #main {
+        margin-left: 8.5rem;
+        font-size:9px
+        width: auto;
+    }
+
+    #main:hover {
+        color: red;
+    }
+
+    #main a {
+        font-size: .6rem;
+    }
+
+    #main h5 {
+        font-size: .55rem;
+        font-weight: bolder;
+    }
+
+    #spanfix {
+        animation-name: blinker;
+        animation-duration: .70s;
+        animation-iteration-count: infinite;
+        color: red;
+        font-size: .80rem;
+        margin-left: 1px;
+        margin-top: -5px;
+    }
+
+    @keyframes blinker {
+        from {
+            opacity: 1.0
+        }
+
+        to {
+            opacity: 0.0;
+        }
+
+    }
+}
